@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.piano-keys .white.active {
+    box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+    background:linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border:5px solid rgb(0, 219, 0);
+  }
+
+  .piano-keys .black.active {
+    box-shadow: inset -5px -10px 10px rgba(255,255,255,0.1);
+    background:linear-gradient(to bottom, #000, #434343);
+    border-top:6px solid rgb(1, 235, 243);
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Set the width of the slider thumb */
+    height: 20px; /* Set the height of the slider thumb */
+    background-color: black; /* Set the background color of the slider thumb */
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px; /* Set the width of the slider thumb */
+    height: 20px; /* Set the height of the slider thumb */
+    background-color: black; /* Set the background color of the slider thumb */
+    cursor: pointer;
+}
+
+.cursive-text {
+    font-family: 'YourCursiveFont', cursive, sans-serif;
+}
+
